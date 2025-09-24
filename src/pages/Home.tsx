@@ -79,7 +79,7 @@ const Home = () => {
           </Badge>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
             Trusted Certificates on the{" "}
-            <span className="text-transparent bg-gradient-accent bg-clip-text">
+            <span className="text-white bg-gradient-accent bg-clip-text">
               Blockchain
             </span>
           </h1>
