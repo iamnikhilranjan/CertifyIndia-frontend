@@ -88,7 +88,7 @@ const Verify = () => {
           <CardHeader>
             <CardTitle className="flex items-center space-x-2 text-primary">
               <Shield className="h-6 w-6" />
-              <span>Employer / Third Party Portal</span>
+              <span>Anyone can verify</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
