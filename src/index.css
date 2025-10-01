@@ -2,146 +2,134 @@
 @tailwind components;
 @tailwind utilities;
 
-/* NCVET Chain - Tech-Trust Design System 
-Professional blockchain platform with clean visual hierarchy
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 210 100% 6%;
-    
-    /* Deep Blue Primary - Professional Trust */
-    --primary: 210 100% 6%;
+    --background: 210 65% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 50% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 55% 13%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 210 65% 11%;
     --primary-foreground: 0 0% 100%;
-    
-    /* Neon Green Accent - Blockchain Theme */
-    --accent: 142 100% 50%;
-    --accent-foreground: 210 100% 6%;
-    
-    /* Secondary Colors */
-    --secondary: 210 15% 96%;
-    --secondary-foreground: 210 100% 8%;
-    
-    /* Neutral Colors */
-    --muted: 210 15% 95%;
-    --muted-foreground: 210 20% 40%;
-    
-    --card: 0 0% 100%;
-    --card-foreground: 210 100% 6%;
-    
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 100% 6%;
-    
-    --border: 210 20% 88%;
-    --input: 210 15% 92%;
-    --ring: 142 100% 50%;
-    
-    --destructive: 0 90% 63%;
+
+    --secondary: 210 45% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 25%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 158 100% 50%;
+    --accent-foreground: 210 65% 11%;
+
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
+
+    --success: 158 100% 50%;
+    --success-foreground: 210 65% 11%;
+
+    --border: 210 40% 25%;
+    --input: 210 40% 25%;
+    --ring: 158 100% 50%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(210 65% 11%), hsl(210 55% 18%));
+    --gradient-accent: linear-gradient(135deg, hsl(158 100% 50%), hsl(158 100% 40%));
+    --gradient-glow: radial-gradient(circle at center, hsl(158 100% 50% / 0.15), transparent 70%);
     
-    --success: 142 90% 45%;
-    --success-foreground: 0 0% 100%;
-    
-    --warning: 38 100% 60%;
-    --warning-foreground: 210 100% 6%;
-    
-    /* Simple Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 40%, hsl(var(--accent) / 0.1));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
-    
-    /* Basic Shadows */
-    --shadow-card: 0 4px 24px -4px hsl(var(--primary) / 0.08);
-    --shadow-button: 0 2px 8px -2px hsl(var(--primary) / 0.15);
-    
-    /* Simple Transitions */
-    --transition-smooth: all 0.3s ease;
+    --shadow-neon: 0 0 20px hsl(158 100% 50% / 0.3), 0 0 40px hsl(158 100% 50% / 0.2);
+    --shadow-card: 0 8px 30px hsl(210 65% 5% / 0.5);
+    --shadow-subtle: 0 4px 15px hsl(210 65% 5% / 0.3);
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --animation-glow: glow 2s ease-in-out infinite alternate;
   }
 }
 
-/* Basic Animation Keyframes */
 @layer base {
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 600;
   }
 }
 
-/* Simple Utility Classes */
 @layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent;
+  .gradient-primary {
+    background: var(--gradient-primary);
   }
-  
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-card hover:scale-[1.02];
+
+  .gradient-accent {
+    background: var(--gradient-accent);
   }
-  
-  .fade-in {
-    animation: fade-in 0.6s ease-out;
+
+  .gradient-glow {
+    background: var(--gradient-glow);
+  }
+
+  .shadow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px hsl(158 100% 50% / 0.5);
+  }
+
+  .blockchain-grid {
+    background-image: 
+      linear-gradient(hsl(158 100% 50% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(158 100% 50% / 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px hsl(158 100% 50% / 0.3), 0 0 20px hsl(158 100% 50% / 0.2);
+  }
+  to {
+    box-shadow: 0 0 20px hsl(158 100% 50% / 0.5), 0 0 40px hsl(158 100% 50% / 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
   }
 }
 

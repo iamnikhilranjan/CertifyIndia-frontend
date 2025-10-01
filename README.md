@@ -1,55 +1,73 @@
-# Certificate Verification Platform – Frontend  
+# Welcome to your Lovable project
 
-This is the **frontend for a blockchain-based certificate verification platform**, built using **React, Vite, TypeScript, Tailwind CSS, Bootstrap, and shadcn-ui**.  
+## Project info
 
-It provides a responsive user interface for:  
-- Learners and verifiers to **verify certificates**  
-- Institutions to **upload certificates** (secured with blockchain wallet login)  
-- Admins to **manage institutions** by registering their wallet public keys  
+**URL**: https://lovable.dev/projects/780dff26-4fc3-4978-9180-08f4b303cd84
 
----
+## How can I edit this code?
 
-## 🚀 Features  
-- **Home Page** with hero banner, slogan, platform details, and a verify button  
-- **Verify Page** for certificate validation via QR code or manual input  
-- **Upload Page** for authorized issuers to generate and upload certificates on-chain  
-- **Admin Page** for managing institution wallet keys (only registered institutions can upload)  
-- Responsive UI with modern components and consistent theme  
+There are several ways of editing your application.
 
----
+**Use Lovable**
 
-## 🛠️ Getting Started  
+Simply visit the [Lovable Project](https://lovable.dev/projects/780dff26-4fc3-4978-9180-08f4b303cd84) and start prompting.
 
-### 1. Clone the Repository  
+Changes made via Lovable will be committed automatically to this repo.
 
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-cd certificate-verification-frontend
 
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### 2. Install Dependencies  
+# Step 3: Install the necessary dependencies.
+npm i
 
-npm install
-
-
-### 3. Run Development Server  
-
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
+```
 
+**Edit a file directly in GitHub**
 
-### 4. Build for Production  
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-npm run build
+**Use GitHub Codespaces**
 
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
+## What technologies are used for this project?
 
----
+This project is built with:
 
-## ⚡ Technologies Used  
-- **React (with Vite)** – Frontend framework  
-- **TypeScript** – Type-safe development  
-- **Tailwind CSS** – Utility-first styling  
-- **Bootstrap** – UI components and layout  
-- **shadcn-ui** – Modern styled components  
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
----
- 
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/780dff26-4fc3-4978-9180-08f4b303cd84) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

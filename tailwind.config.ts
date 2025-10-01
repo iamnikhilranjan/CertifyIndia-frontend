@@ -17,10 +17,7 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: {
-          DEFAULT: "hsl(var(--background))",
-          subtle: "hsl(var(--background-subtle))",
-        },
+        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -33,14 +30,6 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
-        },
-        success: {
-          DEFAULT: "hsl(var(--success))",
-          foreground: "hsl(var(--success-foreground))",
-        },
-        warning: {
-          DEFAULT: "hsl(var(--warning))",
-          foreground: "hsl(var(--warning-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -69,17 +58,6 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
-      backgroundImage: {
-        "gradient-hero": "var(--gradient-hero)",
-        "gradient-card": "var(--gradient-card)",
-      },
-      boxShadow: {
-        "card": "var(--shadow-card)",
-        "button": "var(--shadow-button)",
-      },
-      transitionTimingFunction: {
-        "smooth": "var(--transition-smooth)",
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -102,11 +80,41 @@ export default {
             height: "0",
           },
         },
+        glow: {
+          "0%, 100%": {
+            boxShadow: "0 0 10px hsl(158 100% 50% / 0.3), 0 0 20px hsl(158 100% 50% / 0.2)",
+          },
+          "50%": {
+            boxShadow: "0 0 20px hsl(158 100% 50% / 0.5), 0 0 40px hsl(158 100% 50% / 0.3)",
+          },
+        },
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+        },
+        "pulse-slow": {
+          "0%, 100%": {
+            opacity: "0.6",
+          },
+          "50%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out",
+        glow: "glow 2s ease-in-out infinite alternate",
+        float: "float 6s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 3s ease-in-out infinite",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Poppins', 'system-ui', 'sans-serif'],
       },
     },
   },
